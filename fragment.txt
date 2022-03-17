@@ -1,0 +1,18 @@
+uint16_t data[] = {
+  MAI|CO,   RO|II|CI,   0,       0,         0,        0,        0, 0,   // 0000 - NOP
+  MAI|CO,   RO|II|CI,   MAI|CO,  MAI|RO|CI, RO|AI,    0,        0, 0,   // 0001 - LDA
+  MAI|CO,   RO|II|CI,   MAI|CO,  MAI|RO|CI, RO|BI,    SO|AI,    0, 0,   // 0010 - ADD
+  MAI|CO,   RO|II|CI,   MAI|CO,  MAI|RO|CI, RO|BI,    SO|AI|SUB,0, 0,   // 0011 - SUB
+  MAI|CO,   RO|II|CI,   MAI|CO,  MAI|RO|CI, RI|AO,    0,        0, 0,   // 0100 - STA
+  MAI|CO,   RO|II|CI,   MAI|CO,  RO|AI|CI,  0,        0,        0, 0,   // 0101 - LDI
+  MAI|CO,   RO|II|CI,   MAI|CO,  RO|BI|CI,  SO|AI,    0,        0, 0,   // 0110 - ADI
+  MAI|CO,   RO|II|CI,   MAI|CO,  RO|BI|CI,  SO|AI|SUB,0,        0, 0,   // 0111 - SUI
+  MAI|CO,   RO|II|CI,   MAI|CO,  RO|J,      0,        0,        0, 0,   // 1000 - JMP
+  MAI|CO,   RO|II|CI,   0,       0,         0,        0,        0, 0,   // 1001
+  MAI|CO,   RO|II|CI,   0,       0,         0,        0,        0, 0,   // 1010
+  MAI|CO,   RO|II|CI,   0,       0,         0,        0,        0, 0,   // 1011
+  MAI|CO,   RO|II|CI,   0,       0,         0,        0,        0, 0,   // 1100
+  MAI|CO,   RO|II|CI,   0,       0,         0,        0,        0, 0,   // 1101
+  MAI|CO,   RO|II|CI,   AO|OI,   0,         0,        0,        0, 0,   // 1110 - OUT
+  MAI|CO,   RO|II|CI,   HLT,     0,         0,        0,        0, 0,   // 1111 - HLT
+};
